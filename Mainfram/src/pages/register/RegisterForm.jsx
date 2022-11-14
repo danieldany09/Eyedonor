@@ -8,6 +8,7 @@ function RegisterForm (){
             email: "",
             phoneNumber1:'',
             phoneNumber2:'',
+            aadhaarnumber:'',
             gender:true,
             bloodGroup: "",
             dob: "",
@@ -18,12 +19,9 @@ function RegisterForm (){
             state:'',
             country:'',
             pincode:'',
-            aadhaarnumber:'',
-            zipcode:'',
             agree:true,
         }
     )
-    console.log(formData.favColor)
     
     function handleChange(event) {
         console.log(event)
@@ -48,6 +46,7 @@ function RegisterForm (){
           console.log(response);
         });
     };
+    console.log(JSON.stringify(formData))
   
     return (
       
@@ -224,7 +223,7 @@ function RegisterForm (){
                 />
               </div>
               <div class="md:col-span-5">
-                <label for="full_name">Blood Group </label>
+                <label for="maritalStatus">marital Status </label>
                 
                 <select 
                 name="maritalStatus" 
@@ -233,7 +232,7 @@ function RegisterForm (){
                 class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 >
                   <option value='Single'>Single</option>
-                  <option value='married'>married</option>
+                  <option value='Married'>Married</option>
                   <option value='widowed'>widowed</option>
                 </select>
               </div> 
@@ -253,6 +252,38 @@ function RegisterForm (){
 
               
 
+              
+
+              <div class="md:col-span-1">
+                <label for="city">City</label>
+                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+                  <input 
+                    name="city" 
+                    id="city" 
+                    placeholder="city" 
+                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
+                    value={formData.city}
+                    onChange={handleChange}
+                  
+                  />
+                </div>
+                
+              </div>
+              <div class="md:col-span-1">
+                <label for="state">State / province</label>
+                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+                  <input 
+                    name="state" 
+                    id="state" 
+                    placeholder="State" 
+                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
+                    value={formData.state}
+                    onChange={handleChange}
+                  
+                  />
+                </div>
+                
+              </div>
               <div class="md:col-span-2">
                 <label for="country">Country / region</label>
                 <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
@@ -277,38 +308,14 @@ function RegisterForm (){
                 </div>
               </div>
 
-              <div class="md:col-span-2">
-                <label for="state">State / province</label>
-                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                  <input 
-                    name="state" 
-                    id="state" 
-                    placeholder="State" 
-                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
-                    value={formData.state}
-                    onChange={handleChange}
-                  
-                  />
-                  <button tabindex="-1" class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
-                    <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="18" y1="6" x2="6" y2="18">city</line>
-                      <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                  </button>
-                  <button tabindex="-1" for="show_more" class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
-                    <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
-                  </button>
-                </div>
-              </div>
-
               <div class="md:col-span-1">
-                <label for="zipcode">Zipcode</label>
+                <label for="pincode">Pincode</label>
                 <input 
                   type="text" 
-                  name="zipcode" 
-                  id="zipcode" 
+                  name="pincode" 
+                  id="pincode" 
                   class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" 
-                  value={formData.zipcode}
+                  value={formData.pincode}
                   placeholder="zipcode"
                   onChange={handleChange}
                 />

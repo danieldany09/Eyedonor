@@ -1700,6 +1700,14 @@
     "@mui/utils" "^5.10.9"
     "prop-types" "^15.8.1"
 
+"@mui/styled-engine-sc@^5.10.6":
+  "integrity" "sha512-AQIa478w3UI8gmlht7orp96tEJbEN26FiEs9Aee6E+iVTnoyT3b6V/JapgKlITo6rn7tYTSX9iJYwnDTMhbzTg=="
+  "resolved" "https://registry.npmjs.org/@mui/styled-engine-sc/-/styled-engine-sc-5.10.6.tgz"
+  "version" "5.10.6"
+  dependencies:
+    "@babel/runtime" "^7.19.0"
+    "prop-types" "^15.8.1"
+
 "@mui/styled-engine@^5.10.8":
   "integrity" "sha512-w+y8WI18EJV6zM/q41ug19cE70JTeO6sWFsQ7tgePQFpy6ToCVPh0YLrtqxUZXSoMStW5FMw0t9fHTFAqPbngw=="
   "resolved" "https://registry.npmjs.org/@mui/styled-engine/-/styled-engine-5.10.8.tgz"
@@ -3356,9 +3364,9 @@
   "version" "1.0.3"
 
 "ci-info@^3.2.0":
-  "integrity" "sha512-yH4RezKOGlOhxkmhbeNuC4eYZKAUsEaGtBuBzDDP1eFUKiccDWzBABxBfOx31IDwDIXMTxWuwAxUGModvkbuVw=="
-  "resolved" "https://registry.npmjs.org/ci-info/-/ci-info-3.5.0.tgz"
-  "version" "3.5.0"
+  "integrity" "sha512-RfY02LtqkzB/aiyTrh0TtDS0rQnQY3kyvkVkdBnPTUbkiGbkkCJhS7Oj8b37Qa/5eGiMilF3kH+/Km1EZxpuyQ=="
+  "resolved" "https://registry.npmjs.org/ci-info/-/ci-info-3.6.0.tgz"
+  "version" "3.6.0"
 
 "cjs-module-lexer@^1.0.0":
   "integrity" "sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA=="
@@ -8782,7 +8790,7 @@
   "resolved" "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz"
   "version" "3.3.1"
 
-"styled-components@^5.3.6", "styled-components@>= 2":
+"styled-components@^5.3.1", "styled-components@^5.3.6", "styled-components@>= 2":
   "integrity" "sha512-hGTZquGAaTqhGWldX7hhfzjnIYBZ0IXQXkCYdvF1Sq3DsUaLx6+NTHC5Jj1ooM2F68sBiVz3lvhfwQs/S3l6qg=="
   "resolved" "https://registry.npmjs.org/styled-components/-/styled-components-5.3.6.tgz"
   "version" "5.3.6"

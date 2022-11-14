@@ -1,11 +1,12 @@
 import "./home.css"
-
+import Slider from '../../components/topbar/slider'
+import  Topbar from "../../components/topbar/Topbar"
 export default function Home() {
   return (
     <>
-      <div className="homeContainer">
-      <h1>hello</h1>
-      </div>
+    {/* <Topbar/>    */}
+    <Slider/>
+    
     </>
   );
 }

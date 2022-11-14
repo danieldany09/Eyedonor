@@ -13,7 +13,7 @@ app.listen(5000, (err) => {
   }
 });
 mongoose
-  .connect("mongodb+srv://owndb:VInxk9KEBPe3RMcU@cluster0.ncpvelk.mongodb.net/eyedonor", {
+  .connect("mongodb+srv://owndb:VInxk9KEBPe3RMcU@cluster0.ncpvelk.mongodb.net/eyedonor1", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

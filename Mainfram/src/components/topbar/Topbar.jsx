@@ -30,9 +30,9 @@ export default function Topbar() {
 
 
   return (
-    <div>
+    <div classNames="z-10">
       
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="bg-gray-800 z-10">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -141,7 +141,7 @@ export default function Topbar() {
                           Add User
                         </a>
                       )}
-                    </Menu.Item>:<p>123</p>}
+                    </Menu.Item>:null}
                     <Menu.Item>
                       {({ active }) => (
                         <a

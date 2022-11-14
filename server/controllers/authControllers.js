@@ -21,7 +21,7 @@ const handleErrors = (err) => {
   }
 
   if (err.code === 11000) {
-    errors.email = "Email is already registered";
+    // errors.email = "Email is already registered";
     return errors;
   }
 
@@ -50,8 +50,8 @@ module.exports.register = async (req, res, next) => {
     res.status(201).json({ status: true });
   } catch (err) {
     console.log(err);
-    const errors = handleErrors(err);
-    res.json({ errors,status: false });
+    // const errors = handleErrors(err);
+    res.json({ err,status: false });
   }
 };
 module.exports.login = async (req, res) => {
