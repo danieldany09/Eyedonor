@@ -72,6 +72,17 @@ text-decoration: underline;
 cursor: pointer;
 `
 
+const Alert=styled.div`
+
+
+
+`
+
+const Box=styled.div`
+  
+
+`
+
 export default function Login() {
   const email = useRef();
   const password = useRef();
@@ -85,12 +96,15 @@ export default function Login() {
     );
   };
 
+  
+
   return (
     <Container >
       <Wrapper>
+     
         
           <Title >
-           STAFF SIGNIN
+          SIGNIN
           </Title>
        
           <Form className="loginBox" onSubmit={handleClick}>
@@ -109,13 +123,14 @@ export default function Login() {
              
               ref={password}
             />
-            <Button className="loginButton" type="submit" disabled={isFetching}>
+            <Button className="loginButton" type="submit" disabled={isFetching} >
               {isFetching ? (
-                <CircularProgress color="white" size="20px" />
+                <CircularProgress color="white" size="20px" onClick={Alert} />
               ) : (
                 "Log In"
               )}
             </Button>
+            
             <a href="#">forget passsword?</a>
           </Form>
        

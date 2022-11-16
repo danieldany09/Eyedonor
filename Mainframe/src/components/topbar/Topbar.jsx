@@ -11,7 +11,7 @@ const navigation = [
 
 
   { name: 'Home', href: '/', current: true },
-  { name: 'EyeBanks in India', href: '/register', current: false },
+  { name: 'EyeBanks in TamilNadu', href: '/eyebank', current: false },
   { name: 'Register', href: '/register', current: false },
   { name: 'about', href: '/about', current: false },
 ]
@@ -32,7 +32,7 @@ export default function Topbar() {
   return (
     <div classNames="z-10">
       
-      <Disclosure as="nav" className="bg-gray-800 z-10">
+      <Disclosure as="nav" className="bg-stone-800 z-10   ">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -157,7 +157,7 @@ export default function Topbar() {
                 </Transition>
               </Menu>
             </div>
-              :<div className="flex space-x-4"><a href="/login" className="">LOGIN</a> </div>
+              :<div className="flex space-x-4"><a href="/login" className='bg-gray-900 text-white'>LOGIN</a> </div>
               }
 
 

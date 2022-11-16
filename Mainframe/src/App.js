@@ -14,11 +14,17 @@ import {
 } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import Eyebanks from "./pages/Eyebanks/Eyebanks";
+import Eyebanksmap from "./pages/Eyebanks/Eyebanksmap";
+import Footer from "./components/footer/Footer";
+import News from "./components/news/News";
+
 
 function App() {
   const { user } = useContext(AuthContext);
   console.log(user)
-  return (<div>
+  return (
+  <div>
     <Topbar />
     <Router>
       <Switch>
@@ -29,6 +35,7 @@ function App() {
         <Route path="/login"><Login /></Route>
         <Route path="/adduser" component={Adduser}></Route>
         <Route path="/register"><RegisterFrom /></Route>
+        <Route path="/eyebank"><Eyebanksmap /></Route>
         <Route path="/view"><ViewTable /></Route>
         <Route path="/dashboard">{user ?
           <Dashboard role={user.roles}/>
@@ -38,7 +45,10 @@ function App() {
    
       </Switch>
     </Router>
-  </div>
+ 
+  
+  </div> 
+  
     
   );
 }

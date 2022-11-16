@@ -9,7 +9,8 @@ export const loginCall = async (userCredential, dispatch) => {
     if(res.status==200){
       console.log("My data"+res.data)
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-      <Redirect to="/home" />
+      window.alert("Login Successfully");
+      window.location = '/';
     }
     
     dispatch({ type: "LOGIN_FAILURE0", payload: null});
