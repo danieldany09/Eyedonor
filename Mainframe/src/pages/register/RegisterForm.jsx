@@ -51,25 +51,25 @@ function RegisterForm (){
     return (
       
     <div>
-        <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
-  <div class="container max-w-screen-lg mx-auto">
+        <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center">
+  <div className="container max-w-screen-lg mx-auto">
     <div>
-      <h2 class="font-semibold text-xl text-gray-600">Responsive Form</h2>
-      <p class="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p>
+      <h2 className="font-semibold text-xl text-gray-600">Responsive Form</h2>
+      <p className="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p>
 
-      <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-        <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-          <div class="text-gray-600">
-            <p class="font-medium text-lg">Personal Details</p>
+      <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+        <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+          <div className="text-gray-600">
+            <p className="font-medium text-lg">Personal Details</p>
             <p>Please fill out all the fields.</p>
           </div>
 
-          <div class="lg:col-span-2">
+          <div className="lg:col-span-2">
             <form onSubmit={handleSubmit}>
-            <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+            <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
               
-              <div class="md:col-span-3">
-                <label for="address">First Name</label>
+              <div className="md:col-span-3">
+                <label htmlFor="address">First Name</label>
                 <input
                 type="text"
                 placeholder="First Name"
@@ -77,12 +77,12 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="firstName"
                 value={formData.firstName}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
               
-              <div class="md:col-span-2">
-                <label for="city">Last Name</label>
+              <div className="md:col-span-2">
+                <label htmlFor="city">Last Name</label>
                 <input
                 type="text"
                 required
@@ -90,12 +90,12 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="lastName"
                 value={formData.lastName}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
 
-              <div class="md:col-span-5">
-                <label for="full_name">Email Address </label>
+              <div className="md:col-span-5">
+                <label htmlFor="full_name">Email Address </label>
                 <input
                 type="email"
                 placeholder="Email"
@@ -103,11 +103,11 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="email"
                 value={formData.email}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
-              <div class="md:col-span-3">
-                <label for="address">Phone Number1</label>
+              <div className="md:col-span-3">
+                <label htmlFor="address">Phone Number1</label>
                 <input
                 type="text"
                 placeholder=" "
@@ -115,12 +115,12 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="phoneNumber1"
                 value={formData.phoneNumber1}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
               
-              <div class="md:col-span-2">
-                <label for="city">Phone Number2</label>
+              <div className="md:col-span-2">
+                <label htmlFor="city">Phone Number2</label>
                 <input
                 type="text"
                 required
@@ -128,12 +128,12 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="phoneNumber2"
                 value={formData.phoneNumber2}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
               
-              <div class="md:col-span-5">
-                <label for="full_name">Aadhaar number </label>
+              <div className="md:col-span-5">
+                <label htmlFor="full_name">Aadhaar number </label>
                 <input
                 type="text"
                 required
@@ -141,11 +141,11 @@ function RegisterForm (){
                 onChange={handleChange}
                 name="aadhaarnumber"              
                 value={formData.aadhaarnumber}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
-            <div class="md:col-span-3">
-              <label for="gender">Gender </label>
+            <div className="md:col-span-3">
+              <label htmlFor="gender">Gender </label>
               <div>
                 <input 
                     type="radio"
@@ -154,35 +154,35 @@ function RegisterForm (){
                     value="male"
                     
                     onChange={handleChange}
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="gender-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> MALE </label>
+                <label htmlFor="gender-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> MALE </label>
                 <input 
                     type="radio"
                     id="gender"
                     name="gender"
                     value="female"
-                    onChange={handleChange}class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    onChange={handleChange}className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="gender-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> FEMALE </label>
+                <label htmlFor="gender-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> FEMALE </label>
                 <input 
                     type="radio"
                     id="gender"
                     name="gender"
                     value="others"
-                    onChange={handleChange}class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    onChange={handleChange}className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
-                <label for="gender-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> OTHERS </label>
+                <label htmlFor="gender-3" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"> OTHERS </label>
               </div>
             </div>
-            <div class="md:col-span-2">
-                <label for="full_name">Blood Group </label>
+            <div className="md:col-span-2">
+                <label htmlFor="full_name">Blood Group </label>
                 
                 <select 
                 name="bloodGroup" 
                 id="bloodGroup"                
                 onChange={handleChange}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 >
                   <option value='O'>O</option>
                   <option value='A+'>A+</option>
@@ -196,8 +196,8 @@ function RegisterForm (){
                 </select>
               </div> 
 
-            <div class="md:col-span-3">
-                <label for="address">DOB</label>
+            <div className="md:col-span-3">
+                <label htmlFor="address">DOB</label>
                 <input
                 value={formData.dob}
                 type='date'
@@ -205,12 +205,12 @@ function RegisterForm (){
                 name='dob'
                 id='dob'
                 onChange={handleChange}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
               
-              <div class="md:col-span-2">
-                <label for="city">Age</label>
+              <div className="md:col-span-2">
+                <label htmlFor="city">Age</label>
                 <input
                 value={formData.age}
                 placeholder='age'
@@ -219,25 +219,25 @@ function RegisterForm (){
                 name='age'
                 id='age'
                 onChange={handleChange}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 />
               </div>
-              <div class="md:col-span-5">
-                <label for="maritalStatus">marital Status </label>
+              <div className="md:col-span-5">
+                <label htmlFor="maritalStatus">marital Status </label>
                 
                 <select 
                 name="maritalStatus" 
                 id="maritalStatus"                
                 onChange={handleChange}
-                class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                 >
                   <option value='Single'>Single</option>
                   <option value='Married'>Married</option>
                   <option value='widowed'>widowed</option>
                 </select>
               </div> 
-              <div class="md:col-span-5">
-                <label for="full_name">Address </label>
+              <div className="md:col-span-5">
+                <label htmlFor="full_name">Address </label>
                 <textarea 
                 value={formData.address}
                 placeholder="Address"
@@ -245,7 +245,7 @@ function RegisterForm (){
                 required
                 name="address"
                 rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900  rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" 
+                className="block p-2.5 w-full text-sm text-gray-900  rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" 
 
                 />
               </div>
@@ -254,14 +254,14 @@ function RegisterForm (){
 
               
 
-              <div class="md:col-span-1">
-                <label for="city">City</label>
-                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+              <div className="md:col-span-1">
+                <label htmlFor="city">City</label>
+                <div className="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
                   <input 
                     name="city" 
                     id="city" 
                     placeholder="city" 
-                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
+                    className="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
                     value={formData.city}
                     onChange={handleChange}
                   
@@ -269,14 +269,14 @@ function RegisterForm (){
                 </div>
                 
               </div>
-              <div class="md:col-span-1">
-                <label for="state">State / province</label>
-                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+              <div className="md:col-span-1">
+                <label htmlFor="state">State / province</label>
+                <div className="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
                   <input 
                     name="state" 
                     id="state" 
                     placeholder="State" 
-                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
+                    className="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent" 
                     value={formData.state}
                     onChange={handleChange}
                   
@@ -284,9 +284,9 @@ function RegisterForm (){
                 </div>
                 
               </div>
-              <div class="md:col-span-2">
-                <label for="country">Country / region</label>
-                <div class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+              <div className="md:col-span-2">
+                <label htmlFor="country">Country / region</label>
+                <div className="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
                   <input
                   type='' 
                     name="country" 
@@ -294,37 +294,37 @@ function RegisterForm (){
                     placeholder="Country" 
                     value={formData.country}
                     onChange={handleChange}
-                    class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"  
+                    className="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"  
                   />
-                  <button tabindex="-1" class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
-                    <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <button tabIndex="-1" className="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
+                    <svg className="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" strokewidth="2" strokelinecap="round" strokeLinejoin="round">
                       <line x1="18" y1="6" x2="6" y2="18"></line>
                       <line x1="6" y1="6" x2="18" y2="18"></line>
                     </svg>
                   </button>
-                  <button tabindex="-1" for="show_more" class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
-                    <svg class="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                  <button tabIndex="-1" htmlFor="show_more" className="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
+                    <svg className="w-4 h-4 mx-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" strokewidth="2" strokelinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
                   </button>
                 </div>
               </div>
 
-              <div class="md:col-span-1">
-                <label for="pincode">Pincode</label>
+              <div className="md:col-span-1">
+                <label htmlFor="pincode">Pincode</label>
                 <input 
                   type="text" 
                   name="pincode" 
                   id="pincode" 
-                  class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" 
+                  className="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50" 
                   value={formData.pincode}
                   placeholder="zipcode"
                   onChange={handleChange}
                 />
               </div>
 
-              <div class="md:col-span-5">
-                <div class="inline-flex items-center">
-                  <input type="checkbox" name="billing_same" id="billing_same" class="form-checkbox" />
-                  <label for="billing_same" class="ml-2">I hereby declare that i am willing to donate my organs for social benefit as a life saving measure for a
+              <div className="md:col-span-5">
+                <div className="inline-flex items-center">
+                  <input type="checkbox" name="billing_same" id="billing_same" className="form-checkbox" />
+                  <label htmlFor="billing_same" className="ml-2">I hereby declare that i am willing to donate my organs for social benefit as a life saving measure for a
 patients suffering from permanaent organ(s) failure,in the event of an unanticipated Brain Stem Death
 Occurring to me.</label>
                 </div>
@@ -332,9 +332,9 @@ Occurring to me.</label>
 
             
       
-              <div class="md:col-span-5 text-right">
-                <div class="inline-flex items-end">
-                  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+              <div className="md:col-span-5 text-right">
+                <div className="inline-flex items-end">
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
                 </div>
               </div>
 

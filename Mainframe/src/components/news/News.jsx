@@ -70,7 +70,7 @@ const News = () => {
         <Button>
         {/* <FontAwesomeIcon icon="fa-solid fa-paper-plane-top" /> */}
         {/* <FontAwesomeIcon icon="fa-regular fa-paper-plane-top" /> */}
-        <i class="fa-solid fa-paper-plane" style={{color:"white"}}></i>
+        <i className="fa-solid fa-paper-plane" style={{color:"white"}}></i>
 
                 </Button>
         </InputContainer>

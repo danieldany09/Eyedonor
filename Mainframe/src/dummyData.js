@@ -1,5 +1,5 @@
 export const popularProducts = [
-    {
+{
         id:"1",
         firstName:"mani",
         lastName:"bharathi",

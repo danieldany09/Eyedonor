@@ -13,14 +13,15 @@ const Container = styled.div`
 
 
 
-const Table = ({ item }) => {
+const Table = ({ datas }) => {
   return (
-    <div className="container">
+
+    <div className="">
    
-        <table class="table table-hover">
+        <table className="table table-hover">
   <thead>
     <tr>
-      <th scope="col">ID</th>
+      {/* <th scope="col">ID</th> */}
       <th scope="row">FirstName</th>
       <th scope="row">LastName</th>
       <th scope="row">Email</th>
@@ -39,9 +40,10 @@ const Table = ({ item }) => {
       <th scope="row">pincode</th>    
     </tr>
   </thead>
+  {datas.map((item) => (   
   <tbody>
     <tr>
-    <th scope="col">{item.id}</th>
+    {/* <th scope="col">{item.id}</th> */}
     <td>{item.firstName}</td>
     <td>{item.lastName}</td>
     <td>{item.email}</td>
@@ -50,7 +52,7 @@ const Table = ({ item }) => {
     <td>{item.aadhaarnumber}</td>
     <td >{item.gender}</td>
     <td >{item.bloodGroup}</td>
-    <td >{item.dob}</td>
+    <td >{typeof item.dob}</td>
     <td >{item.age}</td>
     <td >{item.maritalStatus}</td>
     <td >{item.address}</td>
@@ -60,6 +62,7 @@ const Table = ({ item }) => {
      <td >{item.pincode}</td>
     </tr>
   </tbody>
+     ))}
 </table>
 </div>
        

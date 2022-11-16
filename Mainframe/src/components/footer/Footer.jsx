@@ -107,20 +107,20 @@ const Footer = () => {
                 <SocialIcons>
                     <Icon color="3B5999">
                     
-                     <i class="fa-brands fa-facebook"></i>
+                     <i className="fa-brands fa-facebook"></i>
                      
                     </Icon>
                     <Icon color="E4405F">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                         {/* <Instagram /> */}
                     </Icon>
                     <Icon color="55ACEE">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                         {/* <Twitter /> */}
                     </Icon>
                     <Icon color="FF0000">
                         {/* <YouTube /> */}
-                        <i class="fa-brands fa-youtube"></i>
+                        <i className="fa-brands fa-youtube"></i>
                     </Icon>
                 </SocialIcons>
             </Left>
@@ -140,16 +140,16 @@ const Footer = () => {
             <Right>
                 <Title>Contact</Title>
                 <ContactItem>
-                <i class="fa-solid fa-house" style={{marginRight:"1px"}}></i> <p style={{padding:"5px"}}><a href='https://kongu.ac.in/'>Kongu Engineering College</a></p>
+                <i className="fa-solid fa-house" style={{marginRight:"1px"}}></i> <p style={{padding:"5px"}}><a href='https://kongu.ac.in/'>Kongu Engineering College</a></p>
                    {/* < style={{marginRight:"10PX"}}/> kongu engineering college */}
                 </ContactItem>
                 <ContactItem>
-                <i class="fa-solid fa-phone"></i><p style={{padding:"5px"}}><a href=''>+91 9345844496</a></p> , <p style={{padding:"5px"}}><a href=''>+91 6385687966</a></p>
+                <i className="fa-solid fa-phone"></i><p style={{padding:"5px"}}><a href=''>+91 9345844496</a></p> , <p style={{padding:"5px"}}><a href=''>+91 6385687966</a></p>
 
                     {/* <Phone style={{marginRight:"10PX"}}/> 9345844496 */}
                 </ContactItem>
                 <ContactItem>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <p style={{padding:"5px"}}><a href=''>danielrajav.20it@kongu.edu</a></p>,
                 <p style={{padding:"5px"}}><a href=''>manibharathim.20it@kongu.edu</a></p> 
 

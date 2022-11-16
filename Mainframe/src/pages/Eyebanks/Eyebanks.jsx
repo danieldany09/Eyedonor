@@ -15,14 +15,14 @@ const Eyebanks = ({ item }) => {
     <p className="card-text">{item.BusinessGenre}</p>
   </div>
   <ul className="list-group list-group-flush">
-  <div class="hotel-location-wrapper">
-       <div className='icon'><a href={item.address}><i class="fa-solid fa-location-dot"></i></a> </div>
-        <div class="hotel-location-distance">{item.BusinessAddress}</div>
+  <div className="hotel-location-wrapper">
+       <div className='icon'><a href={item.address}><i className="fa-solid fa-location-dot"></i></a> </div>
+        <div className="hotel-location-distance">{item.BusinessAddress}</div>
     </div>
    
-    <div class="hotel-location-wrapper">
-       <div className='icon'><a href=''><i class="fa-solid fa-phone"></i></a> </div>
-        <div class="hotel-location-distance">{item.BusinessPhoneNumber}</div>
+    <div className="hotel-location-wrapper">
+       <div className='icon'><a href=''><i className="fa-solid fa-phone"></i></a> </div>
+        <div className="hotel-location-distance">{item.BusinessPhoneNumber}</div>
     </div>
 
 
