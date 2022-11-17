@@ -25,17 +25,24 @@ console.log(JSON.stringify(popularProducts))
     //   const [popularProducts, getApi] = React.useState([]);
     //   console.log("popul"+popularProducts)
 export default class RegisterTable extends Component {
+  constructor(props){
+    super(props)
+    
+  }
   state = {
     posts: []
   }
+  
   componentDidMount() {
-    axios.get(`https://script.google.com/macros/s/AKfycbzpIXaaINuKDnfsWW6i71w8r_E_jpmjd51ttwxOxkVtUkA0GWdjUl5uWL7YoEtgF5ar/exec`)
+
+    axios.get(`https://script.google.com/macros/s/AKfycbzBhyh1UB1f3zcziFoPIGO96JXWOP2W_tCu8xiYzm4RI_Zpwh5rUqrGWL1Uv0e3PqPW/exec?action=view&${this.props.userdata.role!='admin' ? "city="+this.props.userdata.plase: null }`)
     .then(response => {
       const posts = response.data;
       this.setState ({posts:posts.data});
     })
   }
   render() {
+    // console.log("myplase"+this.props.userdata.plase);
     
 //     return (<div>{console.log('mydata'+typeof JSON.parse(JSON.stringify(this.state.posts)))}</div> )
 //   }

@@ -43,6 +43,10 @@ function RegisterForm (){
           formData
         )
         .then((response) => {
+          if(response.status==200){
+            window.alert("Register Successfully");
+            window.location = '/';
+          }
           console.log(response);
         });
     };

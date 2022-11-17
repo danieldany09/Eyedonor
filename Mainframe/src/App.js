@@ -33,7 +33,7 @@ function App() {
         <Route path="/about"><About /></Route>
         <Route path="/login">{user ? <Redirect to="/" /> :<Login />}</Route>
         <Route path="/adduser">{user ?<Adduser />: <Redirect to="/" />}</Route>
-        <Route path="/view">{user ?<ViewTable />: <Redirect to="/" />}</Route>  
+        <Route path="/view">{user ?<ViewTable userdata={user} />: <Redirect to="/" />}</Route>  
       </Switch>
     </Router>
 
