@@ -11,8 +11,8 @@ const navigation = [
 
   { name: 'Home', href: '/', current: true },
   { name: 'EyeBanks in TamilNadu', href: '/eyebank', current: false },
-  { name: 'Register', href: '/register', current: false },
-  { name: 'about', href: '/about', current: false },
+  { name: 'Register', href: './register', current: false },
+  { name: 'about', href: './about', current: false },
 ]
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
