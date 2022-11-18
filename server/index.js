@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const authRoutes = require("./routes/authRoutes");
 const cookieParser = require("cookie-parser");
-
+const path =require('path')
 const app = express();
 app.listen(5000, (err) => {
   if (err) {
@@ -30,4 +30,10 @@ app.use(
 app.use(cookieParser());
 
 app.use(express.json());
-app.use("/", authRoutes);
+app.use("/api", authRoutes);
+
+app.use(express.static(path.join(__dirname,'../Mainframe', 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname,'../Mainframe', 'build', 'index.html'));
+});

@@ -26,7 +26,7 @@ export default function Home() {
 
 
 
-        <div className="block parallax-sec blackish">
+        <div className="block1 parallax-sec blackish">
           <div className="parallax scrolly-invisible" style={{ background: "url(&quot;&quot;) 50% -30.3262px repeat scroll rgba(0, 0, 0, 0)" }} data-velocity="-.1">
           </div>
           <div className="container">

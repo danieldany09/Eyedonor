@@ -17,11 +17,11 @@
 
 }
 
-.block, .block.parallax-sec {
+.block1, .block1.parallax-sec {
     padding: 90px 0;
     overflow: hidden;
 }
-.block, section {
+.block1, section {
     width: 100%;
     position: relative;
     float: left;
