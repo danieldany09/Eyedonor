@@ -113,50 +113,50 @@ export default function Topbar() {
                   <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="/"
+                        <Link
+                          to="/"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           Your Profile
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="/view"
+                        <Link
+                          to="/view"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           View Register
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                     {user.role=='admin'?<Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="/adduser"
+                        <Link
+                          to="/adduser"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           Add User
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>:null}
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="/"
+                        <Link
+                          to="/"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           onClick={logOut}
                         >
                           Sign out
-                        </a>
+                        </Link>
                       )}
                     </Menu.Item>
                   </Menu.Items>
                 </Transition>
               </Menu>
             </div>
-              :<div className="flex space-x-4"><a href="/login" className='bg-gray-900 text-white'>LOGIN</a> </div>
+              :<div className="flex space-x-4"><Link to="/login" className='bg-gray-900 text-white'>LOGIN</Link> </div>
               }
 
 
@@ -167,10 +167,10 @@ export default function Topbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <Link
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -178,7 +178,7 @@ export default function Topbar() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
