@@ -34,6 +34,7 @@ function App() {
         <Route path="/login">{user ? <Redirect to="/" /> :<Login />}</Route>
         <Route path="/adduser">{user ?<Adduser />: <Redirect to="/" />}</Route>
         <Route path="/view">{user ?<ViewTable userdata={user} />: <Redirect to="/" />}</Route>  
+        <Route path="/demoview"><ViewTable userdata={null} /></Route>  
       </Switch>
     </Router>
 

@@ -38,9 +38,8 @@ function RegisterForm (){
       e.preventDefault();
   
       axios
-        .post(
-          'https://sheet.best/api/sheets/19391356-ac44-4812-b332-60cc644aa452',
-          formData
+        .get(
+          `https://script.google.com/macros/s/AKfycbxA8P35CW4lnIWmCVlvSxkuB6kzZMn9F_33ZpdjDdIVODc-2j7Egx_koQ9i85znXF27/exec?action=insert&data=${JSON.stringify(formData)}`
         )
         .then((response) => {
           if(response.status==200){
