@@ -6,7 +6,7 @@ import RegisterFrom from "./pages/register/RegisterForm"
 import ViewTable from "./pages/register/RegisterTable"
 import Topbar from "./components/topbar/Topbar";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
