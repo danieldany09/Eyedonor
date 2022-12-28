@@ -30,7 +30,7 @@ export default function Topbar() {
 
   return (
     <div classNames="z-10">
-
+      
       <Disclosure as="nav" className="bg-stone-800 z-10   ">
       {({ open }) => (
         <>
@@ -63,9 +63,9 @@ export default function Topbar() {
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link
+                      <a
                         key={item.name}
-                        to={item.href}
+                        href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
@@ -73,7 +73,7 @@ export default function Topbar() {
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -113,50 +113,50 @@ export default function Topbar() {
                   <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                     <Menu.Item>
                       {({ active }) => (
-                        <Link
-                          to="/"
+                        <a
+                          href="/"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           Your Profile
-                        </Link>
+                        </a>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <Link
-                          to="/view"
+                        <a
+                          href="/view"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           View Register
-                        </Link>
+                        </a>
                       )}
                     </Menu.Item>
                     {user.role=='admin'?<Menu.Item>
                       {({ active }) => (
-                        <Link
-                          to="/adduser"
+                        <a
+                          href="/adduser"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                         >
                           Add User
-                        </Link>
+                        </a>
                       )}
                     </Menu.Item>:null}
                     <Menu.Item>
                       {({ active }) => (
-                        <Link
-                          to="/"
+                        <a
+                          href="/"
                           className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           onClick={logOut}
                         >
                           Sign out
-                        </Link>
+                        </a>
                       )}
                     </Menu.Item>
                   </Menu.Items>
                 </Transition>
               </Menu>
             </div>
-              :<div className="flex space-x-4"><Link to="/login" className='bg-gray-900 text-white'>LOGIN</Link> </div>
+              :<div className="flex space-x-4"><a href="/login" className='bg-gray-900 text-white'>LOGIN</a> </div>
               }
 
 
@@ -167,10 +167,10 @@ export default function Topbar() {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
-                <Link
+                <Disclosure.Button
                   key={item.name}
-                  
-                  to={item.href}
+                  as="a"
+                  href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -178,7 +178,7 @@ export default function Topbar() {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </Link>
+                </Disclosure.Button>
               ))}
             </div>
           </Disclosure.Panel>
