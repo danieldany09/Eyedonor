@@ -6,7 +6,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main
+      - client
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/client'
 
     steps:
       - name: Download artifact
