@@ -1,4 +1,4 @@
-name: Eyedonor Client
+name: Eyedonor-Client
 
 on:
   push:
