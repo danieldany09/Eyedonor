@@ -3,7 +3,7 @@ name: Eyedonor-Client
 on:
   push:
     branches:
-      - Mainframe
+      - client
 jobs:
   build:
     name: Build
