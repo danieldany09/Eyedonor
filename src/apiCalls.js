@@ -11,7 +11,7 @@ export const loginCall = async (userCredential, dispatch) => {
       console.log("My data"+res.data)
       dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
       window.alert("Login Successfully");
-      window.location = '/';
+      <Link to="/" />
     }else if(res.data.status==false){
       window.alert("en")
     }

@@ -24,8 +24,8 @@ function App() {
   console.log(user)
   return (
   <div>
-    <Topbar />
     <Router>
+      <Topbar />
       <Switch>
         <Route exact path="/"><Home /></Route>
         <Route path="/eyebank"><Eyebanksmap /></Route>
