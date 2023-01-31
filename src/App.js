@@ -5,6 +5,7 @@ import Adduser from "./pages/adduser/Adduser";
 import RegisterFrom from "./pages/register/RegisterForm"
 import ViewTable from "./pages/register/RegisterTable"
 import Topbar from "./components/topbar/Topbar";
+
 import {
   HashRouter as Router,
   Switch,
